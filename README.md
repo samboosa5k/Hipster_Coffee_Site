@@ -1,8 +1,8 @@
-# Jasper's React Starter
+# Hipster Coffee Site
 
-In my quest for knowledge I wanted to create my own React.js project starter
+A reworked project from a hackathon, now done in React 
 
-### Prerequisites
+### Installation
 
 Run this:
 
@@ -10,18 +10,20 @@ Run this:
 npm i
 ```
 
-## NPM commands (default)
+### Build
 
-Live server:
-
-```
-npm run start
-```
-
-Build files:
+Run this:
 
 ```
 npm run build
+```
+
+### Dist
+
+Open this:
+
+```
+dist/index.html
 ```
 
 ## Acknowledgments
