@@ -17,6 +17,7 @@ import './src/Index.scss';
 /* 
     Notes:
     - Elegant & simple routing down below
+    - Wow!
 */
 
 const Index = () => (
@@ -25,7 +26,9 @@ const Index = () => (
             <Header />
                 <Switch>
                 <Route path="/" render={( routeProps ) => {
-                    return <Content pageContent={routeProps.location.pathname} />;
+                    return  <main className="content">
+                                <Content pageContent={routeProps.location.pathname} />
+                            </main>;
                     }} />
                 </Switch>
             <Footer />
