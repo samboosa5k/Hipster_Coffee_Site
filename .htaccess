@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /dist
+
+RewriteRule index.html

@@ -2,6 +2,15 @@
 
 A reworked project from a hackathon, now done in React 
 
+### Process
+
+* Make skeleton components with text
+* Setup routing
+* Make sure routing works
+* Make smaller subcomponents
+* Add actual content
+* Add actual styling
+
 ### Installation
 
 Run this:
