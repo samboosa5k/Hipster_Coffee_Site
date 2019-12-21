@@ -1,8 +1,19 @@
 .content__ourStory {
+    &-intro {
+        h1 {
+            line-height: $mainheader-lineheight;
+        }
+
+        p {
+            line-height: $para-lineheight;
+        }
+    }
+
     &-founderImageContainer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: 1rem;
         text-align: center;
     }
 

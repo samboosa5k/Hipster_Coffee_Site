@@ -1,21 +1,31 @@
 .content__shopMenu {
-    &-coffee {
-        display: flex;
-        flex-direction: row;
+    h1,
+    h2 {
+        line-height: $mainheader-lineheight;
     }
-    
+
+
+    &-coffee,
     &-nonAlc {
         display: flex;
         flex-direction: row;
+        padding-bottom: 1rem;
     }
 
-    &-left {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    &-left,
     &-right {
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 0 2rem 0 2rem;
+
+        h4 {
+            padding: 1rem 0 1rem 0;
+            border-bottom: 1px solid gray;
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+        }
+
     }
 }

@@ -9,12 +9,17 @@
 @import './scss/footer.scss';
 
 /* 
-    Subcomponent stylesz
+    Page stylesz
 */
 @import './scss/content/home.scss';
 @import './scss/content/shopMenu.scss';
 @import './scss/content/coffeeBeans.scss';
 @import './scss/content/ourStory.scss';
+
+/* 
+    Subcomponent stylez
+*/
+@import './scss/navigation/navBar.scss';
 
 /* 
     GLobal stylesz

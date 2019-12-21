@@ -1,5 +1,17 @@
 .content__home {
+    // Section spacing
+    &-introImage,
+    &-detailsContainer,
+    &-map {
+        padding-top: 1rem;
+    }
+
+    &-intro {
+        line-height: $mainheader-lineheight;
+    }
+
     &-introImage {
+        width: 100%;
         max-width: $content;
         height: auto;
     }
@@ -17,6 +29,10 @@
         }
     }
 
+    &-details {
+        line-height: $para-lineheight;
+    }
+
     &-mapContainer {
         display: flex;
         justify-content: center;
@@ -24,7 +40,6 @@
 
     &-map {
         width: 90%;
-        
         min-height: 400px;
         max-height: 480px;
         max-width: $content;
