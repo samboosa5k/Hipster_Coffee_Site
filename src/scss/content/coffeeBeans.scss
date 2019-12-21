@@ -13,10 +13,25 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+
+        @media screen and (max-width: $b-small) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: $b-small) {
+            flex-direction: row;
+        }
     }
 
     &-card {
-        width: 45%;
+        @media screen and (max-width: $b-small) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $b-small) {
+            width: 45%;
+        }
+        
         margin: 1rem 0 0 0;
         background-color: $coffeeCard-background;
 

@@ -8,14 +8,23 @@
     &-coffee,
     &-nonAlc {
         display: flex;
-        flex-direction: row;
+        @media screen and (max-width: $b-small) {
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: $b-small) {
+            flex-direction: row;
+        }
         padding-bottom: 1rem;
     }
 
     &-left,
     &-right {
         width: 100%;
-        margin: 0 2rem 0 2rem;
+        
+        @media screen and (min-width: $b-small) {
+            margin: 0 2rem 0 2rem;
+        }
 
         h4 {
             padding: 1rem 0 1rem 0;
