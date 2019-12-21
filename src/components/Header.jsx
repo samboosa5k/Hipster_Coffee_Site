@@ -3,13 +3,20 @@ import React from 'react';
 /* 
     Component imports
 */
-import NavBar from './header/NavBar.jsx';
+import NavBar from './navigation/NavBar.jsx';
 
-const Header = (props) => (
-    <>
-        <span>Logo</span>
-        <NavBar />
-    </>
+/* 
+    Image import
+*/
+import logo from '../img/logo.svg';
+
+const Header = () => (
+    <header className="header">
+        <div className="header__container">
+            <img className="header__logo" src={logo} alt="logo"/>
+            <NavBar navbarClass="header__navbar"/>
+        </div>
+    </header>
 )
 
 export default Header;

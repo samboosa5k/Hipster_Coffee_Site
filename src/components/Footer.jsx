@@ -1,9 +1,18 @@
 import React from 'react';
 
+/* 
+    Component imports
+*/
+import NavBar from './navigation/NavBar.jsx';
+
 const Footer = () => (
-    <>
-        <div className="footer">Footer</div>
-    </>
+    <footer className="footer">
+        <div className="footer__container">
+            <NavBar navbarClass="footer__navbar"/>
+            <h2 className="footer__hashtag">#HIPSTERSMAKECOFFEE</h2>
+            <p className="footer__social">Follow us on Twitter and Instagram</p>
+        </div>
+    </footer>
 )
 
 export default Footer;
