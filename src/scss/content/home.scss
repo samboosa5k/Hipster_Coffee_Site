@@ -1,11 +1,5 @@
 .content__home {
-    // Section spacing
-    &-introImage,
-    &-detailsContainer,
-    &-map {
-        padding-top: 1rem;
-    }
-
+    
     &-intro {
         line-height: $mainheader-lineheight;
     }
@@ -19,6 +13,7 @@
     &-detailsContainer {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 1rem;
 
         @media screen and (max-width: $b-small) {
             flex-direction: column;
@@ -31,6 +26,10 @@
 
     &-details {
         line-height: $para-lineheight;
+
+        @media screen and (max-width: $b-small) {
+            text-align: center;
+        }
     }
 
     &-mapContainer {

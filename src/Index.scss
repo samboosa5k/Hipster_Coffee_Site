@@ -47,3 +47,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* 
+    Responsive fonts
+*/
+@media screen and (max-width: $b-small) {
+    p {
+        font-size: $mobile-p;
+    }
+}
