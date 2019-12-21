@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /* 
     Component imports: Content
@@ -14,8 +15,8 @@ import OurStory from './content/OurStory.jsx';
     - Beautiful!
 */
 
-const Content = ( props ) => {
-    switch(props.pageContent){
+const Content = ( {pageContent} ) => {
+    switch(pageContent){
         case "/":
             return <Home />;
             break;
@@ -32,6 +33,10 @@ const Content = ( props ) => {
             return <Home />;
             break;
     }
+}
+
+Content.propTypes = {
+    pageContent: PropTypes.string.isRequired,
 }
 
 export default Content;

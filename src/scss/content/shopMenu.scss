@@ -1,0 +1,21 @@
+.content__shopMenu {
+    &-coffee {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &-nonAlc {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-right {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

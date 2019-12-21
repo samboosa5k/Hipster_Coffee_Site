@@ -1,5 +1,11 @@
 import React from 'react';
 
+/* 
+    Image import
+    - Best practice according to stackoverflow!
+*/
+import founder from '../../img/founder.jpg';
+
 const OurStory = () => (
     <div className="content__ourStory">
         <div className="content__ourStory-intro">
@@ -8,8 +14,9 @@ const OurStory = () => (
             <p>Believing as much in the hand of an educated barista as in the innovative equipment of the our ever-growing industry, GHC offers a full spectrum of brewing opportunities – from pour overs to syphon pots to finely executed espresso beverages.</p>
             <p>Each cup of coffee is made with love, precision and care.</p>
         </div>
-        <div className="content__ourStory-founderImage">
-            Image of founder
+        <div className="content__ourStory-founderImageContainer">
+            <img src={founder} className="content__ourStory-founderImage" alt="founder-image" />
+            <p>Pictured: founder John pouring the GHC's 1000th cup of coffee</p>
         </div>
     </div>
 );

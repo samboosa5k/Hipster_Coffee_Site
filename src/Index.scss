@@ -1,8 +1,40 @@
 @import './scss/variables.scss';
+@import './scss/breakpoints.scss';
+
+/* 
+    Main component stylesz
+*/
+@import './scss/header.scss';
+@import './scss/content.scss';
+@import './scss/footer.scss';
+
+/* 
+    Subcomponent stylesz
+*/
+@import './scss/content/home.scss';
+@import './scss/content/shopMenu.scss';
+@import './scss/content/coffeeBeans.scss';
+@import './scss/content/ourStory.scss';
+
+/* 
+    GLobal stylesz
+*/
+.text-justify {
+    text-align: justify;
+}
+
+/* 
+    Mega-global styles
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     height: 100%;
-    background-color: $body-background;
+    background-color: $footer-background;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .app-container {

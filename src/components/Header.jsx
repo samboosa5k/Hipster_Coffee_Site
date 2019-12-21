@@ -5,10 +5,17 @@ import React from 'react';
 */
 import NavBar from './navigation/NavBar.jsx';
 
-const Header = (props) => (
+/* 
+    Image import
+*/
+import logo from '../img/logo.svg';
+
+const Header = () => (
     <header className="header">
-        <span className="header__logo">Logo</span>
-        <NavBar navbarClass="header__navbar"/>
+        <div className="header__container">
+            <img className="header__logo" src={logo} alt="logo"/>
+            <NavBar navbarClass="header__navbar"/>
+        </div>
     </header>
 )
 

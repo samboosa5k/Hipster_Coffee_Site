@@ -17,7 +17,7 @@ module.exports = {
             template: './index.html'
         } ),
         new CopyPlugin( [
-            {from: 'src/images', to: 'dist/images' }
+            {from: 'src/img', to: 'dist/img' }
         ])
     ],
     resolve: {
