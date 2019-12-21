@@ -14,7 +14,7 @@ const Header = () => (
     <header className="header">
         <div className="header__container">
             <img className="header__logo" src={logo} alt="logo"/>
-            <NavBar navbarClass="header__navBar"/>
+            {/* <NavBar navbarClass="header__navBar"/> */}
         </div>
     </header>
 )
