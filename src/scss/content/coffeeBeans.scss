@@ -1,15 +1,33 @@
 .content__coffeeBeans {
+    &-intro {
+        h1 {
+            line-height: $mainheader-lineheight;
+        }
+
+        p {
+            line-height: $para-lineheight;
+        }
+    }
+
     &-cardContainer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 0 1rem 0;
     }
 
     &-card {
         width: 45%;
         margin: 1rem 0 0 0;
         background-color: $coffeeCard-background;
+
+        h2 {
+            padding: 1rem;
+        }
+
+        p {
+            padding: 0 1rem 1rem 1rem;
+            text-align: justify;
+        }
 
         img {
             width: 100%;

@@ -8,7 +8,7 @@ import founder from '../../img/founder.jpg';
 
 const OurStory = () => (
     <div className="content__ourStory">
-        <div className="content__ourStory-intro">
+        <div className="content__ourStory-intro justify-text">
             <h1>Our Story</h1>
             <p>GHC started as a project of two friends and passionate baristas, John & Don in 2010.</p>
             <p>Believing as much in the hand of an educated barista as in the innovative equipment of the our ever-growing industry, GHC offers a full spectrum of brewing opportunities – from pour overs to syphon pots to finely executed espresso beverages.</p>

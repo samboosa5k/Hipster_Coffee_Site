@@ -1,0 +1,24 @@
+.header__navBar,
+.footer__navBar {
+    font-size: 1.5rem;
+    a {
+        margin: 1rem;
+        text-decoration: none;
+    }
+
+    &--active {
+        border-bottom: 2px solid coral;
+    }
+}
+
+.header__navBar {
+    a {
+        color: black;
+    }
+}
+
+.footer__navBar {
+    a {
+        color: white;
+    }
+}
