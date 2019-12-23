@@ -1,13 +1,18 @@
-import React from 'react';
+import React,{Suspense, lazy} from 'react';
 import PropTypes from 'prop-types';
 
 /* 
     Component imports: Content
 */
-import Home from './content/Home.jsx';
-import ShopMenu from './content/ShopMenu.jsx';
-import CoffeeBeans from './content/CoffeeBeans.jsx';
-import OurStory from './content/OurStory.jsx';
+// import Home from './content/Home.jsx';
+// import ShopMenu from './content/ShopMenu.jsx';
+// import CoffeeBeans from './content/CoffeeBeans.jsx';
+// import OurStory from './content/OurStory.jsx';
+
+const Home = React.lazy(()=> import('./content/Home.jsx'));
+const ShopMenu = React.lazy(()=> import('./content/ShopMenu.jsx'));
+const CoffeeBeans = React.lazy(()=> import('./content/CoffeeBeans.jsx'));
+const OurStory = React.lazy(()=> import('./content/OurStory.jsx'));
 
 /* 
     Notes:
@@ -18,19 +23,39 @@ import OurStory from './content/OurStory.jsx';
 const Content = ( {pageContent} ) => {
     switch(pageContent){
         case "/":
-            return <Home />;
+            return (
+                <Suspense fallback={<p>Loading...</p>}>
+                    <Home />
+                </Suspense>
+            );
             break;
         case "/shopMenu":
-            return <ShopMenu />;
+            return (
+                <Suspense fallback={<p>Loading...</p>}>
+                    <ShopMenu />
+                </Suspense>
+            );
             break;
         case "/coffeeBeans":
-            return <CoffeeBeans />;
+            return (
+                <Suspense fallback={<p>Loading...</p>}>
+                    <CoffeeBeans />
+                </Suspense>
+            );
             break;
         case "/ourStory":
-            return <OurStory />;
+            return (
+                <Suspense fallback={<p>Loading...</p>}>
+                    <OurStory />
+                </Suspense>
+            );
             break;
         default:
-            return <Home />;
+            return (
+                <Suspense fallback={<p>Loading...</p>}>
+                    <Home />
+                </Suspense>
+            );
             break;
     }
 }

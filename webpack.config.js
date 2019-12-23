@@ -1,12 +1,12 @@
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
-const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 module.exports = {
     entry: './index.js',
     output: {
         filename: 'bundle.[hash].js',
-        path: path.resolve( __dirname, 'dist' ),
+        chunkFilename: '[name].[hash].bundle.js',
+        path: path.join( __dirname, 'dist' ),
         publicPath: '/'
     },
     devServer: {
@@ -15,10 +15,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'
-        } ),
-        new CopyPlugin( [
-            {from: 'src/img', to: 'dist/img' }
-        ])
+        } )
     ],
     resolve: {
         modules: [__dirname, 'src', 'node_modules'],
@@ -35,12 +32,24 @@ module.exports = {
                 test:/\.s?css$/,
                 use:['style-loader','css-loader', 'sass-loader']
             },
-            {
+	    {
                 test: /\.(png|svg|jpg|gif)$/,
                 use: [
                 'file-loader'
                 ]
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+              vendors: {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendors',
+                    chunks: 'all',
+                enforce: true
+              },
+            },
+          },
     }
 }
