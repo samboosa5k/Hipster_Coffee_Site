@@ -22,7 +22,7 @@ import './src/Index.scss';
 
 const Index = () => (
     <>
-        <Router>
+        <Router basename="/projects/hipster_coffee_site">
             <Header />
                 <Switch>
                 <Route path="/" render={( routeProps ) => {

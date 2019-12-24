@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/samboosa5k/jasper_react_starter/issues"
   },
-  "homepage": "https://github.com/samboosa5k/jasper_react_starter#readme",
+  "homepage": "https://samboosa5k.github.io/projects/hipster_coffee_site/",
   "dependencies": {
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
