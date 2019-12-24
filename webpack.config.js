@@ -5,7 +5,7 @@ module.exports = {
     entry: './index.js',
     output: {
         filename: 'bundle.[hash].js',
-        chunkFilename: '[name].[hash].bundle.js',
+        chunkFilename: 'js/[name].[hash].bundle.js',
         path: path.join( __dirname, 'dist' ),
         publicPath: '/'
     },
@@ -26,7 +26,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: require.resolve('babel-loader')
+		loader: require.resolve('babel-loader')
             },
             {
                 test:/\.s?css$/,
@@ -34,9 +34,7 @@ module.exports = {
             },
 	    {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                'file-loader'
-                ]
+                use: ['file-loader?name=img/[name].[ext]']
             }
         ]
     },
